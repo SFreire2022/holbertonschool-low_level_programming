@@ -16,8 +16,10 @@ for (myNum = 0; myNum <= 9; myNum++)
 {
 putchar((myNum % 10) + '0');
 if (myNum != 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 
