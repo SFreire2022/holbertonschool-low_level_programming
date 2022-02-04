@@ -5,7 +5,7 @@
 /**
  * main - main program
  *
- * Description: Print to stdout without puts or printf.
+ * Description: Print to stderr without puts or printf.
  * Return: If all goes on, it returns 1
  */
 int main(void)
