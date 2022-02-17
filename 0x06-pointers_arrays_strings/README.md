@@ -95,9 +95,9 @@
 * and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
 * You are allowed to use the standard library
 
-11. It is the addition of strangeness to beauty that constitutes the romantic character in art
+: 11. It is the addition of strangeness to beauty that constitutes the romantic character in art
 
-:  Write a function that adds two numbers.
+: : Write a function that adds two numbers.
 
 * Where n1 and n2 are the two numbers
 * r is the buffer that the function will use to store the result
@@ -108,9 +108,9 @@
 * n1 and n2 will never be empty
 * If the result can not be stored in r the function must return 0
 
-12. Noise is a buffer, more effective than cubicles or booth walls
+: 12. Noise is a buffer, more effective than cubicles or booth walls
 
-:  Write a function that prints a buffer.
+: : Write a function that prints a buffer.
 
 * The function must print the content of size bytes of the buffer pointed by b
 * The output should print 10 bytes per line
