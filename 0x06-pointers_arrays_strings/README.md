@@ -2,18 +2,16 @@
 
 ## Tasks
 
-
-
 0. strcat
 
-:  Write a function that concatenates two strings.
+    Write a function that concatenates two strings.
 
 * This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte
 * Returns a pointer to the resulting string dest
 
 1. strncat
 
-:  Write a function that concatenates two strings.
+    Write a function that concatenates two strings.
 
 * The \_strncat function is similar to the \_strcat function, except that
   * it will use at most n bytes from src; and
@@ -22,35 +20,35 @@
 
 2. strncpy
 
-:  Write a function that copies a string.
+    Write a function that copies a string.
 
 * Your function should work exactly like strncpy
 
 3. strcmp
 
-:  Write a function that compares two strings.
+    Write a function that compares two strings.
 
 * Your function should work exactly like strcmp
 
 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
 
-:  Write a function that reverses the content of an array of integers.
+    Write a function that reverses the content of an array of integers.
 
 * Where n is the number of elements of the array
 
 5. Always look up
 
-:  Write a function that changes all lowercase letters of a string to uppercase.
+    Write a function that changes all lowercase letters of a string to uppercase.
 
 6. Expect the best. Prepare for the worst. Capitalize on what comes
 
-:  Write a function that capitalizes all words of a string.
+    Write a function that capitalizes all words of a string.
 
 * Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
 
 7. Mozart composed his music not for the elite, but for everybody
 
-:  Write a function that encodes a string into 1337.
+    Write a function that encodes a string into 1337.
 
 * Letters a and A should be replaced by 4
 * Letters e and E should be replaced by 3
@@ -65,7 +63,7 @@
 
 8. rot13
 
-:  Write a function that encodes a string using rot13.
+    Write a function that encodes a string using rot13.
 
 * You can only use if statement once in your code
 * You can only use two loops in your code
