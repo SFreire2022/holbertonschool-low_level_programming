@@ -81,7 +81,7 @@
 
 10. A dream doesn't become reality through magic; it takes sweat, determination and hard work
 
-  Add one line to [link](https://github.com/holbertonschool/make_magic_happen/blob/master/magic.c "this code"), so that the program prints a[2] = 98, followed by a new line.
+    Add one line to [link](https://github.com/holbertonschool/make_magic_happen/blob/master/magic.c "this code"), so that the program prints a[2] = 98, followed by a new line.
 
 * You are not allowed to use the variable a in your new line of code
 * You are not allowed to modify the variable p
@@ -95,7 +95,7 @@
 
 11. It is the addition of strangeness to beauty that constitutes the romantic character in art
 
-  Write a function that adds two numbers.
+    Write a function that adds two numbers.
 
 * Where n1 and n2 are the two numbers
 * r is the buffer that the function will use to store the result
@@ -108,7 +108,7 @@
 
 12. Noise is a buffer, more effective than cubicles or booth walls
 
-  Write a function that prints a buffer.
+    Write a function that prints a buffer.
 
 * The function must print the content of size bytes of the buffer pointed by b
 * The output should print 10 bytes per line
