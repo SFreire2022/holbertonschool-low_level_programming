@@ -13,6 +13,6 @@ All of the following files are programs written in C:
 | `dog.h` | Header file that contains a `struct dog` |
 | `1-init_dog.c` | Initialize a variable of type `struct dog` |
 | `2-print_dog.c` | Prints a `struct dog` |
-| `3-islower.c` | Checks for lowercase character |
+| `dog.h` | Add to header file a type dog_t as a new name for the type `struct dog` |
 | `4-new_dog.c` | Creates a new dog |
 | `5-free_dog.c` | Frees a dog |
