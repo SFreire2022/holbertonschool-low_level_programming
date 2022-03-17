@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * list_len - Traverse all elements in a list to count them.
- * @h: Pointer to the first element of the list.
+ * @n: Pointer to the first element of the list.
  * Return: Number of elements in the list.
  */
 size_t list_len(const list_t *n)
