@@ -8,20 +8,20 @@
  */
 int pop_listint(listint_t **head)
 {
-	int hn; /*saves int value from head*/
+	int hn; /* Int value to save n from head */
 	listint_t *temp;
 
-	/* check if head is null */
+	/* Check if head is null */
 	if (*head == NULL)
 	{
 		return (0);
 	}
 
-	temp = *head; /* head's not null, copy to 0th head to temp */
-	hn = temp->n; /* save the n attribute from temp */
-	*head = (*head)->next; /* the second node is now the head */
+	temp = *head; /* Head's not null, copy to 0th head to temp */
+	hn = (*head)->n; /* Save the n attribute from original head */
+	*head = (*head)->next; /* Change head from 0th to 1st node, now is the 0th */
 
-	free(temp); /* delete the old head */
+	free(temp); /* Delete the old head */
 
 return (hn);
 }
