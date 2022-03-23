@@ -6,29 +6,23 @@
  * Description: Go through the list only once.
  * Return: number of nodes in list. If fails, exit with status 98.
  */
-size_t print_listint_safe(const listint_t *head)
+size_t print_listint_safe(const listint_t *h)
 {
-	int diff = 0;
-	size_t count;
-	const listint_t *current;
+	size_t len = 0;
 
-	current = head;
-
-	count = 0;
-	while (current != NULL)
+	while (h)
 	{
-		count++;
-		diff = current - current->next;
-		printf("[%p] %i\n", (void *)current, current->n);
-		if (diff > 0)
+		printf("[%p] %d\n", (void *)h, h->n);
+		len++;
+
+		if ((void *)h->next >= (void *)h)
 		{
-			current = current->next;
+			printf("-> [%p] %d\n", (void *)h->next, h->next->n);
+			return (len);
 		}
-		else
-		{
-			printf("-> [%p] %i\n", (void *)current->next, current->next->n);
-			break;
-		}
+
+		h = h->next;
 	}
-	return (count);
+
+	return (len);
 }
