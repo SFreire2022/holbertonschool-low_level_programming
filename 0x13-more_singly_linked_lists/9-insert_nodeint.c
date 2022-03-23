@@ -29,7 +29,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		/* get to the nth index referred by idx */
 		for (nnode = 0; nnode < idx - 1; nnode++) /* nnode<idx-1 to put the new */
-		{ /* at the start of the index pos */
+		{ /* at the start of the index pos shifting the old node 1 pos*/
 			/* check if idx is more than the # of nodes */
 			if (temp->next == NULL)
 			{
