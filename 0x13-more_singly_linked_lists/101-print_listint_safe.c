@@ -6,7 +6,7 @@
  * Description: Go through the list only once.
  * Return: number of nodes in list. If fails, exit with status 98.
  */
-size_t print_listint_safe(const listint_t *h)
+size_t print_listint_safe(const listint_t *head)
 {
 	size_t len = 0;
 
