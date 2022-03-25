@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * binary_to_uint - Converts a binary number to an unsigned int
  * @b: Char string type to store the bin
@@ -9,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int tot, pow;
 	int len;
 
-	if (b == '\0') /* Check if empty */
+	if (b == NULL) /* Check if empty */
 		return (0);
 
 	for (len = 0; b[len]; len++) /* Count bin length */
