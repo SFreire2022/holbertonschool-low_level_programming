@@ -6,10 +6,14 @@
   */
 int get_endianness(void)
 {
-	int i;
-	char *test;
+	unsigned int i = 1; /* 4 bytes set as 1*/
+	char *test; /* Pointer to one byete */
 
-	i = 1;
-	test = (char *)&i;
-	return ((int)test[0]);
+	test = (char *)&i; /* Point test to addres first byte of i */
+	/* check if [00000000] 00000000 00000000 00000001 (BIG endian) */
+	/* or [00000001] 00000000 00000000 00000000 (little endian) */
+	if (test[0] == 1)
+		return (1);
+	else
+		return (0);
 }
