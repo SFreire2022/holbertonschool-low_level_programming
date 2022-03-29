@@ -5,7 +5,7 @@
 #include <unistd.h> /* To use write and read functions */
 #include <fcntl.h> /* POSIX constant definitions */
 
-#define BUFSIZE 1024 /* define buffer size to 1KB */
+#define BUFSIZE 1025 /* define buffer size to 1KB */
 
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
