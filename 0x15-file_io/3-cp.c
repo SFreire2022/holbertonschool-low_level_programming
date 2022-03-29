@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
   * main - Entry point
   * @ac: argument count
@@ -25,7 +26,10 @@ int main(int ac, char *av[])
 	{
 		rd_stat = read(fd_from, buffer, BUFSIZE);
 		if (rd_stat == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1])
+			exit(98);
+		}
 		if (rd_stat > 0)
 		{
 			wr_stat = write(fd_to, buffer, rd_stat);
