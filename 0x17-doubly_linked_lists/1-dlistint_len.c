@@ -16,7 +16,7 @@ size_t dlistint_len(const dlistint_t *h)
 	while (h->prev != NULL)/* Ensure it is the first element */
 		h = h->prev;
 
-	while (h->next != NULL)/* Traverse to the last node */
+	while (h != NULL)/* Traverse to the last node */
 	{
 		counter++;
 		h = h->next;
