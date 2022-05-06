@@ -32,11 +32,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 					new_node = add_dnodeint_end(h, n);
 				else
 				{
-					new_node = malloc(sizeof(dlistint_t));
+					new_node = malloc(sizeof(dlistint_t));/* Add node between idx pos */
 					if (new != NULL)
 					{
-						new_node->n = n;
-						new_node->next = head->next;
+						new_node->n = n;/* Set data for the new node */
+						new_node->next = head->next;/* Reorder pointers */
 						new_node->prev = head;
 						head->next->prev = new_node;
 						head->next = new_node;
