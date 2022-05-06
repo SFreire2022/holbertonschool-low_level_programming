@@ -9,6 +9,9 @@ void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *aux;
 
+	if (head == NULL)
+		return;
+
 	/* Ensure it is the first element */
 	while (head->prev != NULL)
 		head = head->prev;
