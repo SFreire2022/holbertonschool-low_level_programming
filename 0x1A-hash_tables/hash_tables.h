@@ -1,7 +1,7 @@
 #ifndef __HASH_T__
 #define __HASH_T__
 
-#include <stddef. h>
+#include <stddef.h>
 
 /* Struct declarations */
 
