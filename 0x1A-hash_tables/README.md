@@ -9,5 +9,5 @@ The following files are programs or functions in C:
 
 | Filename | Description |
 | -------- | ----------- |
-| `0-print_dlistint.c` | function that creates a hash table. |
+| `0-hash_table_create.c` | function that creates a hash table. |
 To be completed...
