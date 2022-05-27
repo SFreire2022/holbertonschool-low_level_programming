@@ -2,6 +2,7 @@
 #define __HASH_T__
 
 #include <stddef.h>
+#include <stdlib.h>
 
 /* Struct declarations */
 
