@@ -9,13 +9,14 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int index;
-	hash_node_t *temp;
+	hash_node_t *temp, *head;
 
 	for (index = 0; index < ht->size; index++)
 	{
 		if (ht->array[index] != NULL)
 		{
-			while (ht->array[index] != NULL)
+			head = ht->array[index]
+			while (head != NULL)
 			{
 				temp = head;
 				head = head->next;
