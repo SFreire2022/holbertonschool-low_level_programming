@@ -3,5 +3,5 @@
 CC := gcc
 SRC := school.c main.c
 
-all: ${SRC}
-	${CC} ${SRC} -o school
+all: $(SRC)
+	${CC} -Wall -Werror -Wextra -pedantic $(SRC) -o school
