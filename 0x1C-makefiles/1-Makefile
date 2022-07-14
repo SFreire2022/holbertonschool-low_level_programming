@@ -1,7 +1,7 @@
 # Second Makefile using variables
 
 CC = gcc
-SRC = school.c main.c
+SRC = school.c main.c m.h
 
 all: $(SRC)
 	$(CC) -Wall -Werror -Wextra -pedantic $(SRC) -o school
