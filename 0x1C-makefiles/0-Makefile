@@ -1,4 +1,4 @@
 # First Makefile
 
-all: school.c main.c
-	gcc -Wall -Werror -Wextra -pedantic school.c main.c -o school
+all: school.c main.c m.h
+	gcc -Wall -Werror -Wextra -pedantic school.c main.c m.h -o school
