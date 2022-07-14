@@ -1,10 +1,10 @@
 # Third Makefile using variables
 # objects to compile only changed source files
 
-CC := gcc
-SRC := school.c main.c
-OBJ := ${SRC:.c=.o}
-NAME := school
+CC = gcc
+SRC = school.c main.c
+OBJ = ${SRC:.c=.o}
+NAME = school
 
 all: ${OBJ}
 	${CC} -Wall -Werror -Wextra -pedantic ${OBJ} -o ${NAME}
