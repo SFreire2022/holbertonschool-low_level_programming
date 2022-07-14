@@ -1,0 +1,24 @@
+# Fourth Makefile using variables
+# objects to compile only changed source files
+# clean, oclean, fclean, re functions
+
+CC = gcc
+SRC = school.c main.c
+OBJ = ${SRC:.c=.o}
+NAME = school
+RM = rm -f
+VIM_EMACS_TEMPF = *~
+
+all: ${OBJ}
+	${CC} -Wall -Werror -Wextra -pedantic ${OBJ} -o ${NAME}
+
+clean:
+	${RM} ${VIM_EMACS_TEMPF} ${NAME}
+
+oclean:
+	${RM} ${OBJ}
+
+fclean:
+	${RM} ${OBJ} ${NAME} ${VIM_EMACS_TEMPF}
+
+re: oclean all
